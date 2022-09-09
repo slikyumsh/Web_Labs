@@ -5,7 +5,7 @@ body {
 .logo {
     height:300px;
     width:300px;
-    margin: 40px;
+    margin: 20px;
     padding: 0;
     background: #000;
 }
@@ -18,7 +18,7 @@ body {
 #navbar li { display: inline; }
 
 #navbar {
-    margin: 0;
+    margin: 20px;
     padding: 0;
     list-style-type: none;
     border: 10px solid #0066FF;
@@ -77,15 +77,13 @@ body {
 }
 
 .left-picture-after-text {
-    float: left;
-    padding: 30px;
+    margin-left: 20px;
 }
 
 .right-picture-after-text {
-    float: right;
-    padding: 30px;
+    margin-left: 20px;
 }
 
-.pictures {
+footer {
     margin-left: 20px;
 }
