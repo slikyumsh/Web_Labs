@@ -1,0 +1,92 @@
+body {
+    background-color: #ffd985;
+}
+
+.contact-phone-number {
+    padding: 30px;
+}
+
+.logo {
+    height:300px;
+    width:300px;
+    margin: 40px;
+    padding: 0;
+    background: #000;
+}
+
+#navbar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#navbar li { display: inline; }
+
+#navbar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 10px solid #0066FF;
+    border-radius: 20px 5px;
+    width: 1415px;
+    text-align: center;
+    background-color: #33ADFF;
+}
+#navbar a {
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+#navbar a:hover {
+    border-radius: 20px 5px;
+    background-color: #0066FF;
+}
+
+.header {
+    display: flex;
+}
+
+.team-name {
+    margin: 30px;
+    padding: 0;
+    list-style-type: none;
+    width: 500px;
+    text-align: center;
+    font-size: 80px
+}
+
+.arcticle {
+    padding: 20px;
+    margin: 20px;
+    background-color: #8cf0ff;
+}
+
+.arcticle-header {
+    width: 300px;
+    text-align: left;
+    font-size: 30px;
+    background: #fffefb;
+    text-decoration: underline #ff3358;
+}
+
+.arcticle-text {
+    font-size: 20px;
+    text-align: left;
+}
+
+.arcticle-author {
+    font-size: 20px;
+    text-align: right;
+}
+
+.left-picture-after-text {
+    float: left;
+    padding: 30px;
+}
+
+.right-picture-after-text {
+    float: right;
+    padding: 30px;
+}
