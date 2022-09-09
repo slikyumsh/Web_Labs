@@ -2,10 +2,6 @@ body {
     background-color: #ffd985;
 }
 
-.contact-phone-number {
-    padding: 30px;
-}
-
 .logo {
     height:300px;
     width:300px;
@@ -27,7 +23,7 @@ body {
     list-style-type: none;
     border: 10px solid #0066FF;
     border-radius: 20px 5px;
-    width: 1415px;
+    width: 1475px;
     text-align: center;
     background-color: #33ADFF;
 }
@@ -54,7 +50,7 @@ body {
     list-style-type: none;
     width: 500px;
     text-align: center;
-    font-size: 80px
+    font-size: 80px;
 }
 
 .arcticle {
@@ -67,7 +63,6 @@ body {
     width: 300px;
     text-align: left;
     font-size: 30px;
-    background: #fffefb;
     text-decoration: underline #ff3358;
 }
 
@@ -89,4 +84,8 @@ body {
 .right-picture-after-text {
     float: right;
     padding: 30px;
+}
+
+.pictures {
+    margin-left: 20px;
 }
