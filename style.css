@@ -1,11 +1,12 @@
 body {
     background-color: #ffd985;
+    margin: 0;
 }
 
 .logo {
     height:300px;
     width:300px;
-    margin: 20px;
+    margin: 3rem;
     padding: 0;
     background: #000;
 }
@@ -14,19 +15,16 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
-#navbar li { display: inline; }
-
-#navbar {
-    margin: 20px;
-    padding: 0;
-    list-style-type: none;
+    width: 100%;
     border: 10px solid #0066FF;
     border-radius: 20px 5px;
-    width: 1475px;
     text-align: center;
     background-color: #33ADFF;
 }
+
+#navbar li { display: inline; }
+
+
 #navbar a {
     color: #fff;
     padding: 5px 10px;
@@ -40,8 +38,15 @@ body {
     background-color: #0066FF;
 }
 
+main {
+    padding: 0 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 .header {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .team-name {
@@ -53,37 +58,51 @@ body {
     font-size: 80px;
 }
 
-.arcticle {
-    padding: 20px;
-    margin: 20px;
+.article {
+    padding: 3rem;
     background-color: #8cf0ff;
 }
 
-.arcticle-header {
-    width: 300px;
+.article-header {
     text-align: left;
-    font-size: 30px;
+    font-size: 2rem;
     text-decoration: underline #ff3358;
 }
 
-.arcticle-text {
-    font-size: 20px;
+.article-text {
+    font-size: 2rem;
     text-align: left;
 }
 
-.arcticle-author {
+.article-author {
     font-size: 20px;
     text-align: right;
 }
 
-.left-picture-after-text {
-    margin-left: 20px;
+.pictures {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
-.right-picture-after-text {
-    margin-left: 20px;
+.pictures img {
+    flex: 0 0 40%;
+    height: 30rem;
 }
+
 
 footer {
-    margin-left: 20px;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .pictures img {
+        flex: 0 0 100%;
+        height: 25rem;
+    }
 }
