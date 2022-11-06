@@ -1,52 +1,9 @@
-body {
-  background-color: #ffd985;
-  margin: 0;
-}
-
 .logo {
   height: 300px;
   width: 300px;
   margin: 3rem;
   padding: 0;
   background: #000;
-}
-
-#navbar {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  width: 100%;
-  border: 10px solid #0066FF;
-  border-radius: 20px 5px;
-  text-align: center;
-  background-color: #33ADFF;
-  position: fixed;
-  top: 0;
-}
-
-#navbar li {
-  display: inline;
-}
-
-
-#navbar a {
-  color: #fff;
-  padding: 5px 10px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  width: 100px;
-}
-
-#navbar a:hover {
-  border-radius: 20px 5px;
-  background-color: #0066FF;
-}
-
-main {
-  padding: 0 2rem;
-  max-width: 1500px;
-  margin: 0 auto;
 }
 
 .header {
@@ -92,10 +49,6 @@ main {
 
 .pictures img {
   height: 30rem;
-}
-
-footer {
-  padding: 15px 30px;
 }
 
 .fl-table {
