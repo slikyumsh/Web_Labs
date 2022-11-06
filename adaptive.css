@@ -1,0 +1,44 @@
+@media screen and (max-width: 576px) {
+  .team-name {
+    font-size: 36px;
+    margin: 4rem 0 0 0;
+  }
+
+  .logo {
+    margin: 2em auto;
+  }
+
+  tr td:last-child, tr th:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #navbar {
+    border: none;
+    border-radius: 0;
+    padding: 8px 16px;
+  }
+
+  #navbar a {
+    width: auto;
+  }
+
+  .article {
+    padding: 1.5rem;
+  }
+
+  .header {
+    flex-direction: column-reverse;
+  }
+
+  .pictures img {
+    width: 100%;
+    height: 100%;
+  }
+
+  td, th {
+    width: auto;
+    min-width: revert;
+  }
+}

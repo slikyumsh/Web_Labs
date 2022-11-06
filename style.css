@@ -1,170 +1,166 @@
 body {
-    background-color: #ffd985;
-    margin: 0;
+  background-color: #ffd985;
+  margin: 0;
 }
 
 .logo {
-    height:300px;
-    width:300px;
-    margin: 3rem;
-    padding: 0;
-    background: #000;
+  height: 300px;
+  width: 300px;
+  margin: 3rem;
+  padding: 0;
+  background: #000;
 }
 
 #navbar {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    width: 100%;
-    border: 10px solid #0066FF;
-    border-radius: 20px 5px;
-    text-align: center;
-    background-color: #33ADFF;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  border: 10px solid #0066FF;
+  border-radius: 20px 5px;
+  text-align: center;
+  background-color: #33ADFF;
+  position: fixed;
+  top: 0;
 }
 
-#navbar li { display: inline; }
+#navbar li {
+  display: inline;
+}
 
 
 #navbar a {
-    color: #fff;
-    padding: 5px 10px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    width: 100px;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
 }
+
 #navbar a:hover {
-    border-radius: 20px 5px;
-    background-color: #0066FF;
+  border-radius: 20px 5px;
+  background-color: #0066FF;
 }
 
 main {
-    padding: 0 2rem;
-    max-width: 1500px;
-    margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .header {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .team-name {
-    margin: 30px;
-    padding: 0;
-    list-style-type: none;
-    width: 500px;
-    text-align: center;
-    font-size: 80px;
+  margin: 30px;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  font-size: 80px;
 }
 
 .article {
-    padding: 3rem;
-    background-color: #8cf0ff;
+  padding: 3rem;
+  background-color: #8cf0ff;
 }
 
 .article-header {
-    text-align: left;
-    font-size: 2rem;
-    text-decoration: underline #ff3358;
+  text-align: left;
+  font-size: 2rem;
+  text-decoration: underline #ff3358;
 }
 
 .article-text {
-    font-size: 2rem;
-    text-align: left;
+  font-size: 2rem;
+  text-align: left;
 }
 
 .article-author {
-    font-size: 20px;
-    text-align: right;
+  font-size: 20px;
+  text-align: right;
 }
 
 .pictures {
-    margin-top: 2rem;
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .pictures img {
-    flex: 0 0 40%;
-    height: 30rem;
+  height: 30rem;
 }
-
 
 footer {
-    margin-left: 2rem;
+  padding: 15px 30px;
 }
 
-@media screen and (max-width: 768px) {
-    .header {
-        flex-direction: column-reverse;
-    }
-
-    .pictures img {
-        flex: 0 0 100%;
-        height: 25rem;
-    }
+.fl-table {
+  margin: 2rem auto;
 }
 
-table {border-collapse: collapse; font-family: helvetica}
-td, th {border:  1px solid;
-    padding: 10px;
-    min-width: 200px;
-    background: white;
-    box-sizing: border-box;
-    text-align: left;
+table {
+  border-collapse: collapse;
 }
+
+td, th {
+  border: 1px solid;
+  padding: 10px;
+  min-width: 200px;
+  background: white;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) td {
+  background: lightpink;
+}
+
 .table-container {
-    position: relative;
-    max-height:  300px;
-    width: 500px;
-    overflow: scroll;
+  position: relative;
+  max-height: 300px;
+  width: 500px;
+  overflow: scroll;
 }
 
 thead th {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background: hsl(20, 50%, 70%);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: hsl(20, 50%, 70%);
 }
 
 thead th:first-child {
-    left: 0;
-    z-index: 3;
+  left: 0;
+  z-index: 3;
 }
 
 tfoot {
-    position: -webkit-sticky;
-    bottom: 0;
-    z-index: 2;
+  position: -webkit-sticky;
+  bottom: 0;
+  z-index: 2;
 }
 
 tfoot td {
-    position: sticky;
-    bottom: 0;
-    z-index: 2;
-    background: hsl(20, 50%, 70%);
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  background: hsl(20, 50%, 70%);
 }
 
 tfoot td:first-child {
-    z-index: 3;
+  z-index: 3;
 }
 
-tbody {
-    overflow: scroll;
-    height: 200px;
-}
 
 /* MAKE LEFT COLUMN FIXEZ */
 tr > :first-child {
-    position: -webkit-sticky;
-    position: sticky;
-    background: hsl(180, 50%, 70%);
-    left: 0;
-}
-/* don't do this */
-tr > :first-child {
-    box-shadow: inset 0px 1px black;
+  position: -webkit-sticky;
+  position: sticky;
+  background: hsl(180, 50%, 70%);
+  left: 0;
 }
