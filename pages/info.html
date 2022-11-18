@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>site/Результаты</title>
+  <script src="../scripts/index.js" type="text/javascript"></script>
   <link rel="stylesheet" href="../styles/shared.css" type="text/css">
   <link rel="stylesheet" href="../adaptive.css" type="text/css">
-  <script src="../scripts/index.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../styles/info.css" type="text/css">
 </head>
 <body>
 <nav>
@@ -19,10 +20,24 @@
 </nav>
 <main>
   <h2>Здесь будут результаты</h2>
+  <p>Вы можете оставить комментарий о результатах выше!</p>
+  <form id="form">
+    <label for="name">
+      Ваше имя:
+      <input type="text" name="name" id="name" placeholder="Введите имя" required>
+    </label>
+    <label for="comment">
+      Ваш комментарий:
+      <textarea name="comment" id="comment" rows="10" placeholder="Введите комментарий" required></textarea>
+    </label>
+    <input type="submit" value="Отправить">
+  </form>
+  <div id="feedback-container"></div>
 </main>
 <footer>
   <h3 class="contact-phone-number">Телефон для коммерческих предложений: 8(921)864-29-46</h3>
   <pre id="js-info"></pre>
 </footer>
+<script src="../scripts/comments.js" type="text/javascript"></script>
 </body>
 </html>
