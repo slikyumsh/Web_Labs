@@ -1,0 +1,45 @@
+#album-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.photo__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.photo__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#pages {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+#pages span {
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid #df8c58;
+  cursor: pointer;
+}
+
+#pages span.active {
+  background: #c76b3e;
+}
+
+.error {
+  color: red;
+}
