@@ -42,17 +42,16 @@
 
 .pictures {
   margin-top: 2rem;
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
 }
 
 .pictures img {
   height: 30rem;
+  margin: 0 2rem;
+  border-radius: 10px;
 }
 
 .fl-table {
-  margin: 2rem auto;
+  margin: 5rem auto 1rem;
 }
 
 table {

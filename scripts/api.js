@@ -12,7 +12,6 @@ const container = document.getElementById('album-list');
 const pagination = document.getElementById('pages');
 const buttons = [...pagination.children];
 
-
 const loadPhotos = async () => {
   container.innerHTML = '<img src="https://i.imgur.com/Os63UKo.gif" width="300" height="150" alt="mask">';
 
@@ -20,7 +19,7 @@ const loadPhotos = async () => {
     const data = (await getPhotos(sessionStorage.getItem('page'))).slice(0, 10);
 
     buttons.forEach(button => {
-      if (button.innerText === localStorage.getItem('page'))
+      if (button.innerText === sessionStorage.getItem('page'))
         button.classList.add('active');
       else
         button.classList.remove('active');
@@ -43,10 +42,10 @@ loadPhotos();
 
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
-    if (button.innerText === localStorage.getItem('page'))
+    if (button.innerText === sessionStorage.getItem('page'))
       return;
 
-    localStorage.setItem('page', button.innerText);
+    sessionStorage.setItem('page', button.innerText);
     loadPhotos();
   });
 });
